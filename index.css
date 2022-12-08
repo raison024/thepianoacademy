@@ -56,10 +56,6 @@ input[type=button]{
     margin-top: 20px;
 }
 
-input[type=button]:hover{
-    background-color: #007bb5;
-}
-
 textarea{
     color: #000;
     padding: 8px;
@@ -113,8 +109,6 @@ textarea{
     font-size: 18px;
     font-family: cursive;
 }
-
-
 
 .page{
     min-height: 100vh;
@@ -251,6 +245,9 @@ textarea{
     background-color: #fff;
     animation-name: contact-anim;
     animation-duration: 1.5s;
+  }
+  .contact-div{
+    width: 70%;
   }
 
   @keyframes contact-anim {
@@ -454,10 +451,15 @@ textarea{
     
     .contact-container{
       height: 100vh;
-      width: 70vw;
+      width: 100%;
       align-items: center;
       text-align: left;
     }
+
+    .contact-div{
+      width: 70%;
+    }
+
     @keyframes contact-anim {
       from{opacity: 0.5;}
     }
@@ -477,6 +479,7 @@ textarea{
     .contact-img{
       height: 100vh;
       width: 100%;
+      background-attachment: fixed;
     }
     @keyframes contactimg-anim {
       from{opacity: 0.5;}
