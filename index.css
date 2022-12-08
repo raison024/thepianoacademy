@@ -480,7 +480,7 @@ textarea{
     .contact-img{
       height: 100vh;
       width: 100%;
-      background-image: url('./assets/profile2-min.jpg');
+      background-image: url('./assets/profile-min.jpg');
       background-size: cover;
     }
     @keyframes contactimg-anim {
