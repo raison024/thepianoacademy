@@ -100,16 +100,16 @@ textarea{
     padding: 0;
 }
 
-@font-face {
+@font-face{
   font-family: cursive;
-  src: url(assets/cursive.ttf);
+  src:url(assets/cursive.ttf) format('truetype');
 }
 
 .logo{
     margin: 10px;
     color: #000;
-    font-size: 18px;
-    font-family: cursive;
+    font-size: 20px;
+    font-weight: lighter;
 }
 
 .page{
@@ -132,11 +132,12 @@ textarea{
 }
 
 .fa {
-    padding: 12px;
+    padding: 10px;
     width: 20px;
     font-size: 30px;
     text-align: center;
     text-decoration: none;
+    border-radius: 10px;
     margin: 10px;
   }
   
@@ -261,7 +262,7 @@ textarea{
     width: 60%;
     background-image: linear-gradient(45deg,
     rgba(0,0,0, 0.2),
-    rgba(0,0,0, 0.2)),url(./assets/profile.jpg);
+    rgba(0,0,0, 0.2)),url(./assets/profile-min.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -479,6 +480,7 @@ textarea{
     .contact-img{
       height: 100vh;
       width: 100%;
+      background-image: url('./assets/profile2.jpg');
       background-size: cover;
     }
     @keyframes contactimg-anim {
