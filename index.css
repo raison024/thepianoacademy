@@ -451,13 +451,7 @@ textarea{
     .row {
       flex-direction: column;
     }
-    h1{
-      animation-name: h1-anim;
-      animation-duration: 2s;
-    }
-    @keyframes h1-anim {
-      from{transform: translate3d(0,20px,0);}
-    }
+    
     .contact-container{
       width: 70vw;
       align-items: flex-start;
@@ -484,7 +478,7 @@ textarea{
       width: 100%;
     }
     @keyframes contactimg-anim {
-      from{transform: translate3d(0,0,0);}
+      from{opacity: 0.5;}
     }
     .page2{
       min-height: 200vh;
