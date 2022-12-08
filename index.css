@@ -494,7 +494,7 @@ textarea{
       gap: 10px;
     }
     .card{
-      width: 200px;
+      width: 220px;
     }
     .card__overlay, .card__header{
       transform: translateY(0);
