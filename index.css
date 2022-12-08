@@ -453,6 +453,7 @@ textarea{
     }
     
     .contact-container{
+      height: 100vh;
       width: 70vw;
       align-items: flex-start;
       text-align: left;
