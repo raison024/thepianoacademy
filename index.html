@@ -33,12 +33,19 @@
               <p style="color: grey; font-size: 15px;">Welcome, you are one step closer to learn piano in the best way possible.</p>
               <p style="font-size: 20px; font-weight: bold; margin-top: 60px;">Let's start a conversation</p>
               <p style="color: grey; font-size: 13px;">Don't worry, your information will be safe with us :)</p>
-            <form action="" style="display: flex; flex-direction:column; align-items:flex-start; justify-content: center;">
+            <form target="_blank" action="https://formsubmit.co/ansonlonappan9@gmail.com" method="POST" 
+              style="display: flex; flex-direction:column; align-items:flex-start; justify-content: center;">
               
-              <input type="text" placeholder="Name" required />
-              <input type="email" placeholder="Email" required />
-              <textarea name="" id="" cols="30" rows="3" placeholder="Type your message here" required></textarea>
-              <button class="custom-btn btn-6"><span>Submit</span></button>
+              <input name="name" type="text" placeholder="Name" required />
+              <input name="email" type="email" placeholder="Email" required />
+              <textarea name="message" id="" cols="30" rows="3" placeholder="Type your message here" required></textarea>
+              <button class="custom-btn btn-6" onclick="submitfunction()" type="submit"><span>Submit</span></button>
+
+              <script>
+                function submitfunction() {
+                  alert("Thank you for your response!");
+                }
+                </script>
 
           </form>
         </div>
