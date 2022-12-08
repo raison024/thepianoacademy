@@ -247,7 +247,7 @@ textarea{
     animation-duration: 1.5s;
   }
   .contact-div{
-    width: 70%;
+    width: 60%;
   }
 
   @keyframes contact-anim {
@@ -479,7 +479,7 @@ textarea{
     .contact-img{
       height: 100vh;
       width: 100%;
-      background-attachment: fixed;
+      background-position: left;
     }
     @keyframes contactimg-anim {
       from{opacity: 0.5;}
