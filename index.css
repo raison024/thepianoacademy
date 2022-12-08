@@ -493,6 +493,9 @@ textarea{
       grid-template-columns: auto;
       gap: 10px;
     }
+    .card{
+      width: 200px;
+    }
     .card__overlay, .card__header{
       transform: translateY(0);
     }
