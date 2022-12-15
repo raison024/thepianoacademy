@@ -211,6 +211,7 @@ textarea{
     font-size: 14px;
     margin: 0;
     color: black;
+    font-weight: bold;
   }
   
   .card__description {
