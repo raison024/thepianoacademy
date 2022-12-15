@@ -83,7 +83,7 @@ textarea{
     justify-content: center;
 }
 
-.nav{
+nav{
     height: 50px;
     width: 100%;
     position: fixed;
@@ -96,7 +96,7 @@ textarea{
     font-weight: bold;
     color: #000;
     background-color: transparent;
-    z-index: 99999;
+    z-index: 0;
     padding: 0;
 }
 
@@ -110,6 +110,7 @@ textarea{
 .page{
     min-height: 100vh;
     width: 100%;
+    background-color: #007bb5;
 }
 
 .page2{
@@ -139,16 +140,6 @@ textarea{
   .fa:hover {
       opacity: 0.7;
   }
-  
-  /* .fa-facebook {
-    background: blue;
-    color: white;
-  }
-
-  .fa-instagram {
-    background: #f705b1;
-    color: white;
-  } */
 
   .fa-linkedin {
     background-color: #007bb5;
@@ -234,7 +225,7 @@ textarea{
   }
 
   .contact-container{
-    height: 100vh;
+    height: 100%;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -440,7 +431,7 @@ textarea{
  
 
   @media only screen and (max-width: 900px) {
-    .nav{
+    nav{
       background-color: #fff;
     }
     .row {
@@ -455,19 +446,23 @@ textarea{
     }
 
     .contact-div{
-      width: 70%;
+      width: 90%;
     }
 
     @keyframes contact-anim {
       from{opacity: 0.5;}
     }
 
-    input[type=text], input[type=email]{
-      width: 70vw; 
+    /* h1{
+      font-size: 25px;
+    } */
+
+    /* input[type=text], input[type=email]{
+      width: 100%; 
     }
     textarea{
-      width: 70vw;
-    }
+      width: 100%;
+    } */
     .custom-btn{
       width: 100%;
     }
