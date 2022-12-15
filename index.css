@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root {
     --surface-color: #fff;
@@ -103,6 +103,7 @@ textarea{
 .logo{
     margin: 10px;
     color: #000;
+    font-family: 'Lobster', cursive;
     font-size: 20px;
     font-weight: lighter;
 }
