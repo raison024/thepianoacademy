@@ -83,7 +83,7 @@ textarea{
     justify-content: center;
 }
 
-nav{
+.nav{
     height: 50px;
     width: 100%;
     position: fixed;
@@ -110,7 +110,6 @@ nav{
 .page{
     min-height: 100vh;
     width: 100%;
-    background-color: #007bb5;
 }
 
 .page2{
@@ -431,7 +430,7 @@ nav{
  
 
   @media only screen and (max-width: 900px) {
-    nav{
+    .nav{
       background-color: #fff;
     }
     .row {
@@ -453,16 +452,6 @@ nav{
       from{opacity: 0.5;}
     }
 
-    /* h1{
-      font-size: 25px;
-    } */
-
-    /* input[type=text], input[type=email]{
-      width: 100%; 
-    }
-    textarea{
-      width: 100%;
-    } */
     .custom-btn{
       width: 100%;
     }
