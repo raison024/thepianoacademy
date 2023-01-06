@@ -35,6 +35,41 @@
               
               <input name="name" type="text" placeholder="Name" required />
               <input name="email" type="email" placeholder="Email" required />
+              
+              <input 
+                type="number" 
+                name="phone" id="phone" 
+                placeholder="Phone No" 
+                onkeyup="phoneValidation()" 
+                required
+                oninput="this.value = this.value.replace(/^[a-zA-Z]$/, '')"
+              >
+              <span id="phoneResp" style="font-size: 12px; margin-top: 5px;"></span>
+
+              <script>
+                function phoneValidation(){
+                  let phone = document.getElementById('phone').value;
+                  let phoneResp = document.getElementById('phoneResp');
+                  let phoneReg = /^(?:(?:\+|0{0,2})91(\s*|[\-])?|[0]?)?([6789]\d{2}([ -]?)\d{3}([ -]?)\d{4})$/;
+                  let phoneValid = phoneReg.test(phone);
+                  if(phone.length === 0){
+                    phoneResp.classList.remove("text-success");
+                    phoneResp.classList.add("text-danger");
+                    phoneResp.innerText = "Enter a phone number!"
+                  }
+                  else if(!phoneValid){
+                    phoneResp.classList.remove("text-success");
+                    phoneResp.classList.add("text-danger");
+                    phoneResp.innerText = "Phone Number is invalid!"
+                  }
+                  else{
+                    phoneResp.classList.remove("text-danger");
+                    phoneResp.classList.add("text-success");
+                    phoneResp.innerText = "Phone Number is valid";
+                  }
+              }
+              </script>
+              
               <textarea name="message" id="" cols="30" rows="3" placeholder="Type your message here" required></textarea>
               <button class="custom-btn btn-6" type="submit"><span>Submit</span></button>
 
